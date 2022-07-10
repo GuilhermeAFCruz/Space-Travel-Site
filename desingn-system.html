@@ -13,7 +13,10 @@
 </head>
 <body >
     <div class="container">
-        <h1 class="uppercase ">Design system</h1>
+        <div class="flex" style="justify-content: space-between; padding: 3rem 0 ">
+            <img src="IMGS/shared/logo.svg" alt="Logo">
+            <h1 class="uppercase flex txt-accent fs-500" style="justify-content: flex-end;">Design system</h1>
+        </div>
         
         <section  id="colors" style="margin: 4rem 0">
             
@@ -44,7 +47,7 @@
             
         </section>
 
-        <section id="typography"  style="margin: 4rem 0">
+        <section id="typography"  style="margin: 7rem 0">
             <h2 class="numbered-title"><span>02 </span>Typography</h2>
             <div class="flex">
                 <div class="flow" style="flex-basis: 100%">
@@ -92,34 +95,56 @@
             </div>
         </section>
 
-        <section class="flow" id="interactive-elements">
+        <section class="flow" id="interactive-elements" style="margin-top: 7rem; --flow-space:2rem;">
             <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
             
             <!-- navigation -->
-            <div>
+            <div style="margin-top: 8rem;">
                 <nav>
-                    <ul class="primary-navigation flex underline-indicators" >
+                    <ul class="primary-navigation flex underline-indicators" style="justify-content: center;" >
                         <li class="active"><a href="#" class=" uppercase letter-spacing-2 txt-white"><span>00</span>Active</a>
                         <li><a href="#" class=" uppercase letter-spacing-2 txt-white"><span>01</span>Hovered</a>
                         <li><a href="#" class=" uppercase letter-spacing-2 txt-white"><span>02</span>Idle</a>
                     </ul>
                 </nav>
             </div>
+            <p class="txt-accent flex" style="justify-content: center;">Different States of Navigation Bar</p>
+                
             
-            <div class="flex">
-                <div style="margin-top: 5rem;">
+            <div class="flex" style="justify-content: space-between; padding: 0 5rem; margin-top: 5rem;">
+                <div class="flex" style="margin-top: 5rem; flex-direction: column; ">
                     <!-- explore button -->
                     <a href="#"class="large-button txt-dark bg-white ff-serif uppercase fs-600"> Explore </a>
+                    <p class="txt-accent flex" style="justify-content: center;margin-top: 2rem; margin-bottom: 8rem;">Landing Page Main Button - Idle</p>
+                    <a href="#"class="large-button txt-dark bg-white ff-serif uppercase fs-600"> Explore </a>
+                    <p class="txt-accent flex" style="justify-content: center; margin-top: 5rem;">Landing Page Main Button - Hover</p>
                 </div>
                 
-                <div style="margin-bottom: 50vh ;">
+                <div class="flow flex" style="margin-bottom: 50vh ; --flow-space:2rem; padding: 0 5rem 0 0 ;  margin-top: 5rem;flex-direction: column; justify-content: center;">
+                    
                     <!-- Tabs -->
-                    
-                    
+                    <div class="underline-indicators flex tab-list" style="justify-content: center;">
+                            <button aria-selected="true" class="uppercase ff-sans-cond bg-dark txt-accent letter-spacing-2">Moon</button>
+                            <button aria-selected="false" class="uppercase ff-sans-cond bg-dark txt-accent letter-spacing-2">Mars</button>
+                            <button aria-selected="false" class="uppercase ff-sans-cond bg-dark txt-accent letter-spacing-2">Europa</button>
+                    </div>
+                    <p class="txt-accent" style="margin: 2rem auto;">Tabs (Active, Hover & Idle)</p>
                     <!-- Dots -->
-                    
+                    <div class=" flex dot-indicators" style="justify-content: center; margin-top: 8rem;">
+                        
+                        <button aria-selected="true" ><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false" ><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false" ><span class="sr-only">Slide title</span></button>
+                    </div>
+                    <p class="txt-accent">Slider 1 States (Active, Hover & Idle)</p>
                     
                     <!-- Numbers -->
+                    <div class="number-indicators flex" style="flex-direction: column;  align-items: center; margin-top: 8rem;" >
+                        <button class="ff-serif fs-500" aria-selected="true">1</button>
+                        <button class="ff-serif fs-500" aria-selected="false">2</button>
+                        <button class="ff-serif fs-500" aria-selected="false">3</button>
+                    </div>
+                    <p class="txt-accent">Slider 2 States (Active, Hover & Idle)</p>
                 </div>
             </div>
             

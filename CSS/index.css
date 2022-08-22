@@ -312,6 +312,7 @@ select {
 
 .primary-navigation a {
     text-decoration: none;
+    
 }
 
 .primary-navigation a > span {
@@ -712,7 +713,7 @@ body {
     grid-area: image;
     max-width: 100%;
     align-self: start;
-    
+    border: .1rem solid hsl( var(--clr-white) / .25);
     
     
 }

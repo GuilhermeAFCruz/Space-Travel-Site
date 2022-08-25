@@ -99,9 +99,9 @@ body {
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 /* make form elements easier to work with */
@@ -260,6 +260,7 @@ select {
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
+    margin-top: 2rem;
 }
 
 .large-button::after {
@@ -298,6 +299,7 @@ select {
 .primary-header {
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .primary-navigation {
@@ -713,7 +715,7 @@ body {
     grid-area: image;
     max-width: 100%;
     align-self: start;
-    border: .1rem solid hsl( var(--clr-white) / .25);
+    
     
     
 }
@@ -820,7 +822,7 @@ body {
             '. tabs content image';
     }
     .grid-container--tech> picture {
-        align-self: start;
+        align-self: end;
         grid-column: span 2;
         max-width: 100%;
     }

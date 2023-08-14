@@ -239,13 +239,6 @@ select {
 }
 
 
-
-
-
-
-
-
-
 /* ------------------- */
 /* Components         */
 /* ------------------- */
@@ -280,14 +273,6 @@ select {
     opacity: 1;
     transform: scale(1.5);
 }
-
-
-
-
-
-
-
-
 
 
 /* primary-header */
@@ -325,11 +310,6 @@ select {
 .mobile-nav-toggle {
     display: none;
 }
-
-
-
-
-
 
 
 @media (max-width: 35rem) {
@@ -452,14 +432,6 @@ select {
 .tab-list {
     --gap: 2rem;
 }
-
-
-
-
-
-
-
-
 
 /* ----------------------------- */
 /* dot indicators                */
@@ -615,15 +587,6 @@ body {
 .numbered-title {
     grid-area: title;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* destination layout */
